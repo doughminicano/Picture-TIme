@@ -1,4 +1,4 @@
-<h1>Picture-Time</h1>h1>
+<h1>Picture-Time</h1>
 
 <h3>Clone ---> code: yarn ---> code: yarn start</h3>
 
