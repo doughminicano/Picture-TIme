@@ -1,6 +1,6 @@
 <h1>Picture-Time</h1>
 
-<h3>Clone ---> code: yarn ---> code: yarn start</h3>
+<h3>git clone ---> code: <span>yarn</span> ---> code: <span>yarn start</span></h3>
 
 <h3>Just type in any words and unsplash api will give you an array of images relating to the word </h3>
 
