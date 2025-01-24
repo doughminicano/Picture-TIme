@@ -1,4 +1,5 @@
-<h1>Picture-Time</h1> <a href="www.dtgtec.com"><h3>LIVE PREVIEW!</h3></a>
+<h1>Picture-Time</h1> <a href="www.dtgtec.com">Live Preview</a>
+
 
 <h3>git clone ---> code: <span>yarn</span> ---> code: <span>yarn start</span></h3>
 
