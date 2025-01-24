@@ -3,7 +3,7 @@
 
 <h3>git clone ---> code: <span>yarn</span> ---> code: <span>yarn start</span></h3>
 
-<h3>Just type in any words and unsplash api will give you an array of images relating to the word </h3>
+<h2>Just type in any words and unsplash api will give you an array of images relating to the word </h2>
 
 <p>Using free online picture API in order to serve random pictures on the click of a button</p>
 
