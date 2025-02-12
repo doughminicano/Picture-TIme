@@ -1,4 +1,4 @@
-import './SearchBar.css';
+import "./SearchBar.css";
 import { useState } from "react";
 
 function SearchBar({ onSubmit }) {
@@ -7,7 +7,7 @@ function SearchBar({ onSubmit }) {
   const handleFormSubmit = (event) => {
     // prevents page from reloading
     event.preventDefault();
-    onSubmit(term)
+    onSubmit(term);
 
     // console.log(term);
   };
@@ -21,15 +21,65 @@ function SearchBar({ onSubmit }) {
   };
 
   return (
+    // Search Bar
     <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
-        <label>Enter Search Term</label>
+        <label>
+          <h3>Enter Search Term</h3>
+        </label>
         <input value={term} onChange={handleChange} />
       </form>
-       <button style={{background: 'green', height: 50, width: 100, margin: 20, fontSize: 16}} onClick={handleNewSearch}>RESET</button>
-      <h1 style={{textTransform: "capitalize", letterSpacing: ".2rem"}}>{term}</h1>
+
+      {/* Instructions */}
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div
+          style={{
+            color: "red",
+            height: 200,
+            width: 200,
+            margin: 20,
+            fontFamily: "roboto",
+            fontSize: 20,
+          }}
+        >
+          <p>
+            <h3>Instructions:</h3> Enter a search term and press enter to search
+            for images. Press RESET to clear the search term.
+          </p>
+        </div>
+        <button
+          style={{
+            background: "red",
+            height: 50,
+            width: 150,
+            margin: 20,
+            fontSize: 20,
+          }}
+          onClick={handleNewSearch}
+        >
+          RESET
+        </button>
+      </div>
+      <div
+        style={{
+          borderBottom: "2px solid red",
+        }}
+      ></div>
+      <h1
+        style={{
+          textTransform: "uppercase",
+          letterSpacing: "3rem",
+          textAlign: "center",
+        }}
+      >
+        {term}
+      </h1>
+      <div
+        style={{
+          borderBottom: "2px solid red",
+        }}
+      ></div>
     </div>
-   
   );
 }
 
